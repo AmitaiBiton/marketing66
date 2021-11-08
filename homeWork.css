@@ -32,12 +32,6 @@ td {
   text-align: center;
 }
 
-#pictures {
-  margin: 0 auto;
-  width: 1300px;
-  text-align: center;
-  visibility: hidden;
-}
 
 h1 {
   font-size: 46px;
@@ -66,22 +60,6 @@ h3 {
   font-weight: 100;
 }
 
-
-
-.albumButtons  {
-  background: rgba(60, 216, 107, 0.637);
-  border: 0px solid #ffffff;
-  width: 100px;
-  padding: 15px 40px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.albumButtons:hover {
-  cursor: pointer;
-  position: relative;
-  background: rgba(98, 212, 132, 0.384);
-}
 
 .regularButton{
   background: rgba(124, 1, 161, 0.637);
