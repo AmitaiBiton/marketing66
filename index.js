@@ -21,7 +21,7 @@ $(document).ready(function () {
       
      
   $("#Get").click(function() {
-    $('#text').text("sum of values: " + "" + sum +"")
+    $('#text1').text("sum of values: " + "" + sum +"")
     post()
   });  
 
@@ -58,8 +58,10 @@ function post(){
       'session_number': ''+mydata.session_number+'',
       'result': ''+sum+''
     })
-  }).then(response => {
-    console.log(response)
+  }).then(function(response) {
+    return response.text();
+  }).then(function(data) {
+    $('#text2').text("response text: " + "" + data +"")
   })
   .catch(error => {
       console.log(error)
